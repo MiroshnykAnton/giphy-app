@@ -1,0 +1,11 @@
+<main>
+
+  <div class="list-container" >
+    <div class="list-content" *ngFor="let item of gifsList">
+      <span class="title">{{item.title}}</span>
+      <span class="date">{{item.trending_datetime}}</span>
+      <img class="gif-wrapper" [src]="item.images.original.url" alt="">
+    </div>
+  </div>
+
+</main>

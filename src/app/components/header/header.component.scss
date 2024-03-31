@@ -1,0 +1,56 @@
+*{
+    background-color: #301f3e;
+    color: white;
+  }
+  
+  .main-container {
+      padding: 2% 5%;
+  }
+  
+  .header-container {
+    box-sizing: border-box;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #ffbf00;
+  
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+  }
+  
+  .input-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #301f3e;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  input {
+    font-size: 16px; /* Розмір шрифту */
+    padding: 10px; /* Внутрішній відступ */
+    border: 1px solid #ccc; /* Тонка рамка */
+    border-radius: 5px; /* Закруглені кути */
+    width: 300px; 
+  }
+  
+  /* Стилі для input з фокусом */
+  input:focus {
+    outline: none; /* Забираємо зовнішній контур при фокусуванні */
+    border-color: #ffbf00; /* Змінюємо колір рамки при фокусуванні */
+  }
+  
+  /* Стилі для input з placeholder */
+  input::placeholder {
+    color: #ffbf00; /* Колір placeholder */
+  }
+  
+  /* Стилі для input з деякими спеціальними властивостями, наприклад, disabled */
+  input[disabled] {
+    opacity: 0.5; /* Зменшуємо прозорість відключеного input */
+    cursor: not-allowed; /* Забороняємо вибір курсора для відключеного input */
+  }
